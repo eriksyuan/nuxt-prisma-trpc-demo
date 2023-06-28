@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-prisma-trpc-demo",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --dotenv .env.dev",
+    "db-seed": "prisma db seed",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare && prisma generate"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18",
+    "@unocss/nuxt": "^0.53.4",
+    "nuxt": "^3.6.1"
+  },
+  "dependencies": {
+    "@prisma/client": "4.16.1",
+    "@trpc/client": "^10.32.0",
+    "@trpc/server": "^10.32.0",
+    "@vueuse/core": "^10.2.0",
+    "prisma": "^4.16.1",
+    "trpc-nuxt": "^0.10.5",
+    "zod": "^3.21.4"
+  }
+}
